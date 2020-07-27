@@ -329,12 +329,31 @@ img {
   justify-content: space-around;
   padding-bottom: 17px;
 }
+.team-member-social-links-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-member-social-links-item:hover {
+  color: var(--accent-color);
+  /*почему оно не работает?*/
+}
+.team-member-link:hover {
+  color: var(--accent-color);
+  /*почему оно не работает?*/
+}
 .team-member-link-icon {
   width: 20px;
   height: 20px;
+
+  display: block;
+  justify-content: center;
 }
 .team-member-link-icon:hover {
   color: var(--accent-color);
+  /*почему оно не работает?*/
 }
 .team-members-list {
   display: flex;
@@ -452,9 +471,22 @@ img {
 .join-logo-link:not(last-child) {
   margin-right: 10px;
 }
+.join-logo-link-svg {
+  width: 44px;
+  height: 44px;
+}
+.join-logo-link:hover .join-logo-link-svg {
+  fill: var(--accent-color);
+  /*почему оно не работает?*/
+}
 .footer {
   background-color: var(--background-dark-color);
 }
+
+
+fill="#fff" style="fill: var(--color5, #fff)"
+fill="#fff" style="fill: var(--color5, #fff)"
+
 
 /*Портфолио*/
 .portfolio {
