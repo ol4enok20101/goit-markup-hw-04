@@ -340,6 +340,10 @@ img {
   color: var(--accent-color);
   /*почему оно не работает?*/
 }
+.team-member-link
+  display: block;
+  border-radius: 50%;
+
 .team-member-link:hover {
   color: var(--accent-color);
   /*почему оно не работает?*/
@@ -394,8 +398,12 @@ img {
 }
 .client-logo-link:hover,
 .client-logo-link:focus {
+  border-color: var(--accent-color);
+}
+.client-logo-link:hover .client-logo-svg,
+.client-logo-link:focus .client-logo-svg{
   fill: var(--accent-color);
-  border: var(--accent-color);
+
   /*почему оно не работает?*/
 }
 
