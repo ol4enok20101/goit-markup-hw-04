@@ -379,21 +379,24 @@ img {
 .clients .section-title {
   margin-bottom: 50px;
 }
-.clients-list-item {
+.client-logo-svg {
+  fill: #AFB1B8;
+}
+.client-logo-link {
   width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
-  color: var(--accent-color) /*не работает*/
-}
-.client-logo-link {
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
+.client-logo-link:hover,
+.client-logo-link:focus {
+  fill: var(--accent-color);
+  border: var(--accent-color);
+  /*почему оно не работает?*/
 }
 
 /*Контакты*/
@@ -463,10 +466,13 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.join-logo-image {
-  color: var(-accent-text);
-
-  margin-right: 10px;
+.join-logo-link {
+  display: block;
+  border-radius: 50%;
+}
+.join-logo-link:hover,
+.join-logo-link:focus {
+  background-color: var(--accent-color);
 }
 .join-logo-link:not(last-child) {
   margin-right: 10px;
@@ -474,18 +480,15 @@ img {
 .join-logo-link-svg {
   width: 44px;
   height: 44px;
-}
-.join-logo-link:hover .join-logo-link-svg {
-  fill: var(--accent-color);
-  /*почему оно не работает?*/
+
+  fill: #fff;
 }
 .footer {
   background-color: var(--background-dark-color);
 }
 
 
-fill="#fff" style="fill: var(--color5, #fff)"
-fill="#fff" style="fill: var(--color5, #fff)"
+
 
 
 /*Портфолио*/
