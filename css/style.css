@@ -80,7 +80,7 @@ img {
 
 /*Хедер*/
 .header {
-  border-bottom: 1px solid #eeeeee;
+
 }
 .logo-link-header {
   font-family: var(--secondary-font);
@@ -95,8 +95,10 @@ img {
 .logo-studio-header {
   color: var(--logo-studio-header);
 }
-.company-mail-header,
-.company-phone-header {
+.header-address {
+  display: flex;
+}
+.company-address-header {
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
@@ -107,18 +109,17 @@ img {
   display: flex;
   align-items: center;
 }
-.company-mail-svg,
-.company-phone-svg {
+.company-address-svg {
+  fill: var(--background-dark-color);
   margin-right: 10px;
 }
-.header-address {
-  display: flex;
-}
-.company-mail-header:hover,
-.company-mail-header:focus,
-.company-phone-header:hover,
-.company-phone-header:focus {
+.company-address-header:hover,
+.company-address-header:focus {
   color: var(--accent-color);
+}
+.company-address-svg:hover,
+.company-address-svg:focus {
+  fill: var(--accent-color);
 }
 .mail-link-block {
   margin-right: 31px;
@@ -145,6 +146,17 @@ img {
 }
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
+}
+.navigation-list-item::after {
+  content: "";
+  width: 47px;
+  height: 4px;
+  background-color: #2196F3;
+  border-radius: 2px;
+  margin-top: 35px;
+
+  display: block;
+  position:absolute; 
 }
 .navigation {
   display: flex;
@@ -336,28 +348,27 @@ img {
   justify-content: center;
   align-items: center;
 }
-.team-member-social-links-item:hover {
-  color: var(--accent-color);
-  /*почему оно не работает?*/
-}
-.team-member-link
-  display: block;
+.team-member-link {
+  width: 44px;
+  height: 44px;  
   border-radius: 50%;
+  fill: #AFB1B8;
 
-.team-member-link:hover {
-  color: var(--accent-color);
-  /*почему оно не работает?*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-member-link:hover,
+.team-member-link:focus {
+  background-color: var(--accent-color);
 }
 .team-member-link-icon {
   width: 20px;
   height: 20px;
-
-  display: block;
-  justify-content: center;
 }
-.team-member-link-icon:hover {
-  color: var(--accent-color);
-  /*почему оно не работает?*/
+.team-member-link:hover .team-member-link-icon,
+.team-member-link:focus .team-member-link-icon{
+  fill: var(--accent-text);
 }
 .team-members-list {
   display: flex;
@@ -403,8 +414,6 @@ img {
 .client-logo-link:hover .client-logo-svg,
 .client-logo-link:focus .client-logo-svg{
   fill: var(--accent-color);
-
-  /*почему оно не работает?*/
 }
 
 /*Контакты*/
@@ -501,6 +510,7 @@ img {
 
 /*Портфолио*/
 .portfolio {
+  border-top: 1px solid #eeeeee;
   /* outline: 1px solid #666; */
   padding-top: 93px;
   padding-bottom: 94px;
