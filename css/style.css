@@ -606,7 +606,7 @@ img {
 .portfolio-example-list-item:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-example-list-item:nth-child(n + 6) {
+.portfolio-example-list-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
 .portfolio-card {
