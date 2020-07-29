@@ -111,6 +111,7 @@ img {
 }
 .company-address-svg {
   fill: currentColor;
+  /*внимательно*/
   margin-right: 10px;
 }
 .company-address-header:hover,
@@ -145,18 +146,6 @@ img {
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
-/* .navigation-list-link::after {
-  position: absolute;
-
-  content: "";
-  width: 47px;
-  height: 4px;
-  background-color: #2196F3;
-  border-radius: 2px;
-  margin-top: 35px;
-
-  display: block;
- } */
 .current::after {
   content: "";
   width: 100%;
@@ -220,6 +209,9 @@ img {
   background-color: var(--accent-color);
   width: 200px;
   height: 50px;
+  outline: none;
+  border: unset;
+  cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -514,24 +506,27 @@ img {
   fill: #fff;
 }
 .subscribe-button {
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.06em;
-color: #ffffff;
-background-color: var(--accent-color);
-width: 200px;
-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: unset;
+  cursor: pointer;
 
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-display: flex;
-align-items: center;
-justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .subscribe-button-icon {
-fill: #fff;
- margin-left: 10px;
+  fill: #fff;
+  margin-left: 10px;
 }
 .footer {
   background-color: var(--background-dark-color);
@@ -560,14 +555,24 @@ fill: #fff;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  border: unset;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  border-radius: 4px;
 
   margin-right: 8px;
-  outline: 2px black;
 }
 .portfolio-button-list-item:hover,
 .portfolio-button-list-item:focus {
   color: var(--accent-text);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 .portfolio-example-title {
   font-weight: 700;
@@ -591,6 +596,12 @@ fill: #fff;
 .portfolio-example-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.portfolio-example-list-item:hover {
+  box-shadow: 1px 4px 6px
+  rgba(0, 0, 0, 0.16), 0px 4px 4px
+  rgba(0, 0, 0, 0.06), 0px 1px 1px
+  rgba(0, 0, 0, 0.12);
 }
 .portfolio-example-list-item:nth-child(3n) {
   margin-right: 0;
