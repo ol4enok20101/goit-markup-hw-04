@@ -597,11 +597,15 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-example-list-item:hover {
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 1px 4px 6px
   rgba(0, 0, 0, 0.16), 0px 4px 4px
   rgba(0, 0, 0, 0.06), 0px 1px 1px
   rgba(0, 0, 0, 0.12);
+}
+.portfolio-card-link {
+    display: block;
 }
 .portfolio-example-list-item:nth-child(3n) {
   margin-right: 0;
